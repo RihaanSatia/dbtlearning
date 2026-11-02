@@ -9,8 +9,8 @@ sources:
           count: 12
           period: hour
         error_after:
-          count: 36
-          period: hour
+          count: 7
+          period: day
       loaded_at_field: _ETL_LOADED_AT
     tables:
       - name: customers
