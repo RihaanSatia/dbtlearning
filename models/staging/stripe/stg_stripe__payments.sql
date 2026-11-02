@@ -4,6 +4,7 @@ select
         paymentmethod as payment_method,
         status,
         amount, 
-        created as created_dt
+        created as created_dt,
+        _batched_at
 
-    from raw.stripe.payment
+    from {{ source('stripe', 'payment') }}
